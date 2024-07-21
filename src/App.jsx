@@ -14,7 +14,7 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=7740193bdeb645b1a1344122240104&q=${city}&aqi=no;`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?/*YOUR API KEY*/=${city}&aqi=no;`;
 
     fetch(apiUrl)
       .then((res) => {
